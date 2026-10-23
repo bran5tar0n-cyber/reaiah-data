@@ -11,7 +11,7 @@ Built by `build.py` from free sources. Every verse-keyed file is per book, named
 | `commentary/mhcc/` | Matthew Henry's Concise Commentary, by section (4,047 sections; `to` = last verse of the section) | CrossWire SWORD module MHCC v2.0, via spearssoftware/open-commentaries | Public domain. "Matthew Henry's Concise Commentary (public domain)" |
 | `fathers/` | Early church fathers on a verse (17,566 quotes on 8,154 verses), oldest first | HistoricalChristianFaith/commentaries-database | Public domain. "Church fathers: public-domain translations (Catena Aurea; Nicene and Post-Nicene Fathers)" |
 | `creeds/creeds.json` | 35 creeds, confessions and catechisms, each with a `family` label | NonlinearFruit/Creeds.json | Public domain texts only (Unlicense). |
-| `people/`, `places/`, `people-places-by-verse/` | 3,067 people and 1,298 places (1,272 with map coordinates), plus which people and places appear in each verse | Theographic Bible Metadata (coordinates from OpenBible.info) | **CC BY-SA 4.0.** "People and places: Theographic Bible Metadata, CC BY-SA 4.0." These files must stay under CC BY-SA if changed and shared. |
+| `people/`, `places/`, `people-places-by-verse/` | 3,067 people and 1,298 places (1,272 with map coordinates), plus which people and places appear in each verse. `uncertain: true` on 726 places where OpenBible lists more than one candidate site or rates its best one under 700/1000 (e.g. Tarshish, Mount Sinai) | Theographic Bible Metadata (coordinates from OpenBible.info) | **CC BY-SA 4.0.** "People and places: Theographic Bible Metadata, CC BY-SA 4.0." These files must stay under CC BY-SA if changed and shared. |
 
 ## Choices made
 

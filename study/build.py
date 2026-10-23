@@ -323,7 +323,7 @@ EXCLUDE_CREEDS = {  # copyrighted per the source repo README
     'christian_shema', 'confession_of_peter', 'helvetic_consensus', 'savoy_declaration', 'shema_yisrael'}
 FAMILY = {
     'apostles_creed': 'Shared (all traditions)', 'nicene_creed': 'Shared (all traditions)',
-    'athanasian_creed': 'Shared (Catholic, Orthodox use differs, Protestant)', 'chalcedonian_definition': 'Shared (all traditions)',
+    'athanasian_creed': 'Early church (Western)', 'chalcedonian_definition': 'Shared (all traditions)',
     'ignatius_creed': 'Early church', 'irenaeus_rule_of_faith': 'Early church', 'tertullians_rule_of_faith': 'Early church',
     'gregorys_declaration_of_faith': 'Early church', 'council_of_orange': 'Early church (Western)',
     'london_baptist_1689': 'Baptist', '1695_baptist_catechism': 'Baptist', 'abstract_of_principles': 'Baptist',
@@ -380,6 +380,15 @@ def people_places():
             'count': f.get('verseCount'), 'first': (refs_of(f.get('verses'), 1) or [None])[0],
             'dict': clean(f.get('dictionaryText') or '') or None,
         })
+    # OpenBible confidence: a place is "uncertain" if OpenBible lists more than one candidate site
+    # or its best identification scores under 700 of 1000.
+    unsure = {}
+    for line in open(os.path.join(SRC, 'gnosis/sources/openbible/ancient.jsonl'), encoding='utf-8'):
+        d = json.loads(line)
+        ids = d.get('identifications') or []
+        top = max([i['score'].get('time_total', 0) for i in ids if isinstance(i.get('score'), dict)] or [0])
+        name = re.sub(r' \d+$', '', d['friendly_id'])
+        unsure[name] = unsure.get(name, False) or top < 700 or len(ids) > 1
     out_places = []
     for p in places:
         f = p['fields']
@@ -392,6 +401,7 @@ def people_places():
             'id': f.get('slug'), 'name': f.get('displayTitle'), 'type': f.get('featureType'),
             'lat': float(lat) if lat else None, 'lon': float(lon) if lon else None,
             'note': f.get('comment'), 'count': f.get('verseCount'),
+            'uncertain': unsure.get(f.get('displayTitle')),
             'refs': refs_of(f.get('verses'), 30), 'dict': clean(txt) if txt else None,
         })
     write('people/people.json', out_people)
@@ -414,6 +424,7 @@ def people_places():
     STATS['people'] = len(out_people)
     STATS['places'] = len(out_places)
     STATS['places_with_coordinates'] = sum(1 for p in out_places if p['lat'] is not None)
+    STATS['places_location_uncertain'] = sum(1 for p in out_places if p['uncertain'])
     STATS['verses_with_people_or_places'] = n
 
 if __name__ == '__main__':
