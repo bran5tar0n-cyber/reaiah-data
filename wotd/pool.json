@@ -1,5 +1,5 @@
 {
- "count": 419,
+ "count": 415,
  "verses": [
   {
    "ref": "Numbers 6:24-26",
@@ -722,11 +722,11 @@
    "theme": "courage"
   },
   {
-   "ref": "Psalm 92:1-2",
+   "ref": "Psalm 92:1",
    "book": "Psalm",
    "chapter": 92,
    "from": 1,
-   "to": 2,
+   "to": 1,
    "theme": "worship"
   },
   {
@@ -738,11 +738,11 @@
    "theme": "worship"
   },
   {
-   "ref": "Psalm 95:6-7",
+   "ref": "Psalm 95:6",
    "book": "Psalm",
    "chapter": 95,
    "from": 6,
-   "to": 7,
+   "to": 6,
    "theme": "worship"
   },
   {
@@ -1546,14 +1546,6 @@
    "theme": "joy"
   },
   {
-   "ref": "Isaiah 61:1",
-   "book": "Isaiah",
-   "chapter": 61,
-   "from": 1,
-   "to": 1,
-   "theme": "hope"
-  },
-  {
    "ref": "Isaiah 62:5",
    "book": "Isaiah",
    "chapter": 62,
@@ -1794,11 +1786,11 @@
    "theme": "love"
   },
   {
-   "ref": "Matthew 5:44",
+   "ref": "Matthew 5:44-45",
    "book": "Matthew",
    "chapter": 5,
    "from": 44,
-   "to": 44,
+   "to": 45,
    "theme": "love"
   },
   {
@@ -2306,11 +2298,11 @@
    "theme": "faith"
   },
   {
-   "ref": "Romans 5:1",
+   "ref": "Romans 5:1-2",
    "book": "Romans",
    "chapter": 5,
    "from": 1,
-   "to": 1,
+   "to": 2,
    "theme": "peace"
   },
   {
@@ -2610,11 +2602,11 @@
    "theme": "love"
   },
   {
-   "ref": "Ephesians 1:7",
+   "ref": "Ephesians 1:7-8",
    "book": "Ephesians",
    "chapter": 1,
    "from": 7,
-   "to": 7,
+   "to": 8,
    "theme": "love"
   },
   {
@@ -2698,11 +2690,11 @@
    "theme": "faith"
   },
   {
-   "ref": "Philippians 1:9",
+   "ref": "Philippians 1:9-10",
    "book": "Philippians",
    "chapter": 1,
    "from": 9,
-   "to": 9,
+   "to": 10,
    "theme": "love"
   },
   {
@@ -2760,14 +2752,6 @@
    "from": 13,
    "to": 14,
    "theme": "hope"
-  },
-  {
-   "ref": "Colossians 1:9-10",
-   "book": "Colossians",
-   "chapter": 1,
-   "from": 9,
-   "to": 10,
-   "theme": "guidance"
   },
   {
    "ref": "Colossians 1:16-17",
@@ -2930,11 +2914,11 @@
    "theme": "mercy"
   },
   {
-   "ref": "Hebrews 6:19",
+   "ref": "Hebrews 6:19-20",
    "book": "Hebrews",
    "chapter": 6,
    "from": 19,
-   "to": 19,
+   "to": 20,
    "theme": "hope"
   },
   {
@@ -3032,14 +3016,6 @@
    "from": 6,
    "to": 6,
    "theme": "grace"
-  },
-  {
-   "ref": "1 Peter 1:3",
-   "book": "1 Peter",
-   "chapter": 1,
-   "from": 3,
-   "to": 3,
-   "theme": "hope"
   },
   {
    "ref": "1 Peter 1:8",
@@ -3256,14 +3232,6 @@
    "from": 14,
    "to": 14,
    "theme": "peace"
-  },
-  {
-   "ref": "Exodus 34:6",
-   "book": "Exodus",
-   "chapter": 34,
-   "from": 6,
-   "to": 6,
-   "theme": "love"
   },
   {
    "ref": "Exodus 33:14",

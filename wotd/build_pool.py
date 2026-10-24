@@ -99,9 +99,9 @@ wisdom|Psalm 90:12
 joy|Psalm 90:14
 rest|Psalm 91:1-2
 courage|Psalm 91:4
-worship|Psalm 92:1-2
+worship|Psalm 92:1
 worship|Psalm 95:1
-worship|Psalm 95:6-7
+worship|Psalm 95:6
 worship|Psalm 96:1-2
 joy|Psalm 100:1-2
 worship|Psalm 100:4-5
@@ -202,7 +202,6 @@ hope|Isaiah 55:11
 joy|Isaiah 55:12
 guidance|Isaiah 58:11
 joy|Isaiah 61:10
-hope|Isaiah 61:1
 love|Isaiah 62:5
 guidance|Isaiah 64:8
 love|Jeremiah 31:3
@@ -233,7 +232,7 @@ joy|Matthew 5:3-4
 mercy|Matthew 5:7-8
 peace|Matthew 5:9
 love|Matthew 5:14-16
-love|Matthew 5:44
+love|Matthew 5:44-45
 faith|Matthew 6:6
 faith|Matthew 6:26
 faith|Matthew 6:33
@@ -297,7 +296,7 @@ joy|Acts 2:46-47
 guidance|Acts 17:27-28
 grace|Acts 20:24
 faith|Romans 1:16
-peace|Romans 5:1
+peace|Romans 5:1-2
 hope|Romans 5:3-5
 love|Romans 5:8
 grace|Romans 6:23
@@ -335,7 +334,7 @@ love|Galatians 5:13
 joy|Galatians 5:22-23
 hope|Galatians 6:9
 love|Galatians 6:2
-love|Ephesians 1:7
+love|Ephesians 1:7-8
 worship|Ephesians 1:3
 grace|Ephesians 2:8-9
 guidance|Ephesians 2:10
@@ -346,7 +345,7 @@ love|Ephesians 4:32
 love|Ephesians 5:1-2
 courage|Ephesians 6:10
 faith|Philippians 1:6
-love|Philippians 1:9
+love|Philippians 1:9-10
 wisdom|Philippians 2:3-4
 joy|Philippians 4:4
 peace|Philippians 4:6-7
@@ -354,7 +353,6 @@ wisdom|Philippians 4:8
 strength|Philippians 4:13
 grace|Philippians 4:19
 hope|Philippians 3:13-14
-guidance|Colossians 1:9-10
 worship|Colossians 1:16-17
 love|Colossians 3:12
 love|Colossians 3:14
@@ -375,7 +373,7 @@ grace|Titus 2:11
 grace|Titus 3:4-5
 worship|Hebrews 1:3
 mercy|Hebrews 4:15-16
-hope|Hebrews 6:19
+hope|Hebrews 6:19-20
 faith|Hebrews 10:23
 faith|Hebrews 11:1
 faith|Hebrews 11:6
@@ -388,7 +386,6 @@ wisdom|James 1:19
 grace|James 1:17
 faith|James 4:8
 grace|James 4:6
-hope|1 Peter 1:3
 joy|1 Peter 1:8
 love|1 Peter 4:8
 grace|1 Peter 4:10
@@ -416,7 +413,6 @@ hope|Revelation 21:5
 worship|Revelation 22:13
 worship|Exodus 15:2
 peace|Exodus 14:14
-love|Exodus 34:6
 rest|Exodus 33:14
 worship|Genesis 1:1
 love|Genesis 1:27
