@@ -346,6 +346,25 @@ def creeds():
     write('creeds/creeds.json', out)
     STATS['creeds'] = [(c['title'], c['family']) for c in out]
 
+
+# Reaiah's own corrections to the Theographic family links (owner's ruling,
+# 2026-10-25): Adam and Eve were created by God, not born to Him, and God's one
+# Son is Jesus. Joseph stays listed as Jesus's earthly father.
+CREATED = 'Created by God (Genesis 1:27; 2:7; 2:22)'
+def fix_people(out_people):
+    for p in out_people:
+        if p['id'] in ('adam_78', 'eve_1231'):
+            p['father'] = [x for x in p['father'] if x != 'God']
+            p['created'] = CREATED
+        elif p['id'] == 'god_1324':
+            p['children'] = ['Jesus Christ']
+            p['childrenLabel'] = 'Son'
+        elif p['id'] == 'jesus_905':
+            earthly = [x for x in p['father'] if x != 'God']
+            p['father'] = ['God']
+            p['earthlyFather'] = earthly
+    return out_people
+
 # ---------------------------------------------------------------- people and places (Theographic, OpenBible coordinates)
 def people_places():
     tdir = os.path.join(SRC, 'theographic-bible-metadata/json')
@@ -404,7 +423,7 @@ def people_places():
             'uncertain': unsure.get(f.get('displayTitle')),
             'refs': refs_of(f.get('verses'), 30), 'dict': clean(txt) if txt else None,
         })
-    write('people/people.json', out_people)
+    write('people/people.json', fix_people(out_people))
     write('places/places.json', out_places)
     # verse -> people/places index for tap-to-learn in the reader
     vidx = collections.defaultdict(lambda: {'p': [], 'l': []})
